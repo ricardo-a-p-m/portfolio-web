@@ -1,0 +1,566 @@
+/* Reset básico */
+button {
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    user-select: none;
+}
+
+body {
+    background: #f0f0f5;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Contenedor para botones (para que no se amontonen) */
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 15px;
+}
+
+/* 1. Botón 3D Verde */
+.boton1 {
+    font-size: 24px;
+    padding: 18px 50px;
+    color: #668428;
+    background: linear-gradient(to bottom, #cdeb8e 0%, #a5c956 100%);
+    border-radius: 10px;
+    box-shadow: 0 6px 0 #819f45;
+    text-shadow: 1px 1px 1px #e1fea6;
+    position: relative;
+}
+
+.boton1:active {
+    top: 3px;
+    box-shadow: 0 3px 0 #819f45;
+    background: linear-gradient(to bottom, #a5c956 0%, #cdeb8e 100%);
+}
+
+/* 2. Botón Minimalista Azul */
+.boton2 {
+    background: #2196f3;
+    color: white;
+    font-size: 20px;
+    padding: 12px 30px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(33, 150, 243, 0.5);
+}
+
+.boton2:hover {
+    background: #1976d2;
+}
+
+/* 3. Botón Neón Rosa */
+.boton3 {
+    background: #e91e63;
+    color: white;
+    font-weight: bold;
+    padding: 14px 40px;
+    font-size: 18px;
+    border-radius: 50px;
+    box-shadow:
+        0 0 5px #e91e63,
+        0 0 15px #e91e63,
+        0 0 20px #e91e63,
+        0 0 30px #f48fb1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.boton3:hover {
+    box-shadow:
+        0 0 10px #f48fb1,
+        0 0 20px #f48fb1,
+        0 0 25px #e91e63,
+        0 0 40px #e91e63;
+}
+
+/* 4. Botón Outline Rojo */
+.boton4 {
+    background: transparent;
+    border: 3px solid #f44336;
+    color: #f44336;
+    font-size: 22px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.boton4:hover {
+    background: #f44336;
+    color: white;
+}
+
+/* 5. Botón Circular Amarillo */
+.boton5 {
+  background: #ffeb3b;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 14px;             /* Reducido */
+  color: #555;
+  box-shadow: 0 6px #c9b800;
+  font-weight: bold;
+  display: flex;               /* Centrado */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6px;                /* Espacio interno */
+  white-space: normal;         /* Permite salto de línea */
+  line-height: 1.1;
+}
+
+.boton5:active {
+  box-shadow: 0 3px #c9b800;
+  transform: translateY(3px);
+}
+
+/* 6. Botón Sombreado Morado */
+.boton6 {
+    background: #9c27b0;
+    color: white;
+    padding: 16px 45px;
+    font-size: 22px;
+    border-radius: 0 50px 50px 0;
+    box-shadow: 4px 4px 10px #6a1b9a;
+}
+
+.boton6:hover {
+    background: #7b1fa2;
+}
+
+/* 7. Botón Degradado Azul */
+.boton7 {
+    background: linear-gradient(45deg, #00bcd4, #2196f3);
+    color: white;
+    padding: 14px 48px;
+    font-size: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px #00bcd4aa;
+}
+
+.boton7:hover {
+    background: linear-gradient(45deg, #2196f3, #00bcd4);
+}
+
+/* 8. Botón Neumórfico */
+.boton8 {
+    background: #e0e0e0;
+    border-radius: 15px;
+    padding: 18px 55px;
+    box-shadow:
+        6px 6px 12px #bebebe,
+        -6px -6px 12px #ffffff;
+    font-size: 20px;
+    color: #555;
+    font-weight: 600;
+}
+
+.boton8:active {
+    box-shadow: inset 6px 6px 12px #bebebe,
+        inset -6px -6px 12px #ffffff;
+}
+
+/* 9. Botón Sombra Negra */
+.boton9 {
+    background: #333;
+    color: white;
+    padding: 12px 38px;
+    font-size: 19px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+}
+
+.boton9:hover {
+    background: #111;
+}
+
+/* 10. Botón Transparente con Borde */
+.boton10 {
+    background: transparent;
+    border: 2px dashed #4caf50;
+    color: #4caf50;
+    padding: 14px 44px;
+    font-size: 21px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.boton10:hover {
+    background: #4caf50;
+    color: white;
+    border-style: solid;
+}
+
+/* 11. Botón "Glass" */
+.boton11 {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    color: #222;
+    padding: 16px 48px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    font-weight: 600;
+}
+
+.boton11:hover {
+    background: rgba(255, 255, 255, 0.25);
+    color: #000;
+}
+
+/* 12. Botón Retro */
+.boton12 {
+    background: #ff6f00;
+    color: white;
+    font-size: 24px;
+    padding: 18px 48px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 6px 6px 0 #bf360c;
+    font-weight: bold;
+}
+
+.boton12:active {
+    top: 3px;
+    box-shadow: 3px 3px 0 #bf360c;
+    position: relative;
+}
+
+/* 13. Botón Plano Azul Claro */
+.boton13 {
+    background: #03a9f4;
+    color: white;
+    padding: 14px 42px;
+    font-size: 18px;
+    border-radius: 3px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.boton13:hover {
+    background: #0288d1;
+}
+
+/* 14. Botón con Icono a la Izquierda */
+.boton14 {
+    background: #673ab7;
+    color: white;
+    font-size: 20px;
+    padding: 14px 38px 14px 60px;
+    border-radius: 30px;
+    position: relative;
+    font-weight: 600;
+}
+
+.boton14::before {
+    content: "➔";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: white;
+}
+
+.boton14:hover {
+    background: #512da8;
+}
+
+/* 15. Botón Redondo Rojo */
+.boton15 {
+    background: #f44336;
+    width: 90px;
+    /* un poco más ancho para texto */
+    height: 90px;
+    /* mismo alto para mantener círculo */
+    border-radius: 50%;
+    font-size: 18px;
+    /* fuente más pequeña */
+    color: white;
+    box-shadow: 0 6px #ba000d;
+    font-weight: bold;
+    display: flex;
+    /* centra texto vertical y horizontal */
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    text-align: center;
+    white-space: normal;
+    line-height: 1.2;
+}
+
+.boton15:active {
+    box-shadow: 0 3px #ba000d;
+    transform: translateY(3px);
+}
+
+
+/* 16. Botón Neón Verde */
+.boton16 {
+    background: #00ff00;
+    color: #003300;
+    padding: 16px 42px;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow:
+        0 0 10px #00ff00,
+        0 0 20px #00ff00,
+        0 0 30px #00ff00;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.boton16:hover {
+    background: #00cc00;
+    box-shadow:
+        0 0 15px #00cc00,
+        0 0 25px #00cc00,
+        0 0 40px #00cc00;
+}
+
+/* 17. Botón con Borde Curvo */
+.boton17 {
+    background: #ff5722;
+    color: white;
+    padding: 14px 48px;
+    font-size: 21px;
+    border-radius: 50px 10px 50px 10px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px #ff572280;
+}
+
+.boton17:hover {
+    background: #e64a19;
+}
+
+/* 18. Botón Plano Gris */
+.boton18 {
+    background: #9e9e9e;
+    color: white;
+    padding: 14px 38px;
+    font-size: 19px;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.boton18:hover {
+    background: #616161;
+}
+
+/* 19. Botón Degradado Circular */
+.boton19 {
+    background: radial-gradient(circle at center, #ff4081, #f50057);
+    color: white;
+    font-size: 22px;
+    padding: 18px 54px;
+    border-radius: 50px;
+    font-weight: 700;
+    box-shadow: 0 6px 20px #f5005770;
+}
+
+.boton19:hover {
+    background: radial-gradient(circle at center, #f50057, #ff4081);
+}
+
+/* 20. Botón Sombra Interior */
+.boton20 {
+    background: #607d8b;
+    color: white;
+    padding: 16px 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 10px #455a64;
+    font-weight: 600;
+}
+
+.boton20:hover {
+    background: #455a64;
+}
+
+/* 21. Botón con Icono Derecho */
+.boton21 {
+    background: #3f51b5;
+    color: white;
+    padding: 14px 50px 14px 40px;
+    font-size: 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    position: relative;
+}
+
+.boton21::after {
+    content: "→";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: white;
+}
+
+.boton21:hover {
+    background: #303f9f;
+}
+
+/* 22. Botón Transparente con Sombra */
+.boton22 {
+    background: transparent;
+    color: #00bcd4;
+    font-size: 22px;
+    padding: 12px 44px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #00bcd4;
+    font-weight: 700;
+}
+
+.boton22:hover {
+    background: #00bcd4;
+    color: white;
+    box-shadow: 0 0 20px #00bcd4;
+}
+
+/* 23. Botón Grande Naranja */
+.boton23 {
+    background: #ff9800;
+    color: white;
+    font-size: 26px;
+    padding: 20px 60px;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0 6px 12px #ef6c00;
+}
+
+.boton23:hover {
+    background: #ef6c00;
+}
+
+/* 24. Botón Pluma */
+.boton24 {
+    background: #4caf50;
+    color: white;
+    padding: 16px 48px;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px #4caf5080;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1.5px;
+}
+
+.boton24:hover {
+    background: #388e3c;
+}
+
+/* 25. Botón Sólido con Borde */
+.boton25 {
+    background: #3f51b5;
+    /* azul sólido */
+    color: white;
+    /* texto blanco */
+    padding: 14px 42px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 2px solid #303f9f;
+    /* borde ligeramente más oscuro */
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.boton25:hover {
+    background: #303f9f;
+    /* cambia fondo al pasar el cursor */
+}
+
+/* 26. Botón con Sombra Larga */
+.boton26 {
+    background: #673ab7;
+    color: white;
+    font-size: 20px;
+    padding: 14px 42px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 10px rgba(103, 58, 183, 0.5);
+    font-weight: 600;
+}
+
+.boton26:hover {
+    box-shadow: 10px 10px 20px rgba(103, 58, 183, 0.7);
+}
+
+/* 27. Botón con Borde Doble */
+.boton27 {
+    background: #f50057;
+    color: white;
+    padding: 16px 48px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 4px double white;
+    font-weight: 700;
+}
+
+.boton27:hover {
+    background: #c51162;
+}
+
+/* 28. Botón Sólido Gris Oscuro */
+.boton28 {
+    background: #212121;
+    color: white;
+    padding: 14px 40px;
+    font-size: 18px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.boton28:hover {
+    background: #000000;
+}
+
+/* 29. Botón Borde y Fondo degradado */
+.boton29 {
+    background: linear-gradient(45deg, #ff6e7f, #bfe9ff);
+    color: #333;
+    font-size: 22px;
+    padding: 16px 50px;
+    border-radius: 12px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    font-weight: 700;
+}
+
+.boton29:hover {
+    border-color: #ff6e7f;
+    background-clip: border-box;
+    background-origin: border-box;
+}
+
+/* 30. Botón con Sombra y Relieve */
+.boton30 {
+    background: #00acc1;
+    color: white;
+    padding: 16px 48px;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow:
+        0 5px 0 #007c91,
+        0 10px 15px rgba(0, 124, 145, 0.4);
+    font-weight: 700;
+    position: relative;
+}
+
+.boton30:active {
+    top: 3px;
+    box-shadow: 0 2px 0 #007c91;
+}

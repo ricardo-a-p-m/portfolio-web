@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+}
+
+.contenedor-principal {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+.tarjeta {
+    width: 500px;
+    height: 200px;
+    margin: 10px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 0.8rem;
+    margin: 0.3rem 0;
+}
+
+button {
+    all: unset;
+    font: inherit;
+    cursor: pointer;
+    user-select: none;
+    color: #222;
+    background-color: #14bde3;
+    text-align: center;
+    margin: 10px 5px;
+    padding: 0.6em 1.2em;
+    border-radius: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0da4c4;
+}
+
+.contenedor-botones {
+    display: flex;
+    gap: 10px;
+}
+
+.mensaje-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    all: unset;
+    font: inherit;
+    background: transparent;
+    color: #fff;
+    padding: 1em 0.5em;
+    border-bottom: 1px solid #777;
+}
+
+input[readonly] {
+    cursor: default;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Navegador Web</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box right">
+      <div class="resultado">
+        <div id="resultados">
+          <div id="textContainer">
+            <p id="extractText"></p>
+          </div>
+          <div id="imageContainer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="box left">
+      <button id="miBoton" onclick="leerTexto()">Leer</button>
+      <button onclick="pausarReanudar()">Pausar/Reanudar</button>
+      <input class="text" id="busqueda" placeholder="Ingresa tu pregunta" />
+      <button onclick="buscarArticulo()">Buscar</button>
+    </div>
+  </div>
+  <script src="script/app.js"></script>
+  <script src="script/leerTexto.js"></script>
+  <script src="script/pausar_reanudar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+* {
+    margin: 3px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #4b6f4b;
+    font-weight: bold;
+}
+
+header .descripcion {
+    font-size: 16px;
+    color: #555;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+#wrapper {
+    margin-top: 20px;
+    /* Espacio para el encabezado */
+    border: none;
+    /* elimina línea negra visible */
+    border-radius: 12px;
+    background-color: #f9fff9;
+    width: 600px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    /* sombra ligera si deseas */
+}
+
+body {
+    color: #444;
+    font-size: 14px;
+    background: #ffffff;
+    font-family: "Century Gothic", Helvetica, sans-serif;
+    text-align: center;
+}
+
+#content {
+    margin: 20px auto;
+    width: 600px;
+    position: relative;
+}
+
+#wrapper {
+    margin: 70px auto;
+    /* centra horizontalmente con espacio arriba y abajo */
+    border-radius: 12px;
+    border: 2px solid #a8d5a2;
+    background-color: #f9fff9;
+    width: 600px;
+    overflow: hidden;
+}
+
+#steps {
+    width: 600px;
+}
+
+#navigation {
+    height: 45px;
+    background-color: #cde8cd;
+    border-top: 1px solid #fff;
+    border-radius: 0 0 12px 12px;
+}
+
+#navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#navigation ul li {
+    margin: 0 5px;
+}
+
+#navigation ul li a {
+    display: block;
+    height: 45px;
+    background: #a8d5a2;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 45px;
+    padding: 0 20px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#navigation ul li a:hover,
+#navigation ul li.selected a {
+    background: #8ccf8a;
+    color: #fff;
+}
+
+#steps form fieldset {
+    border: none;
+    padding: 15px;
+}
+
+#steps form legend {
+    background: #a8d5a2;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    width: 95%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px auto;
+}
+
+#steps form p {
+    background: #f4fff4;
+    border: 1px solid #a8d5a2;
+    width: 450px;
+    padding: 8px;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #b4dcb4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#steps form p label {
+    width: 150px;
+    text-align: right;
+    margin-right: 15px;
+    line-height: 26px;
+    color: #4b6f4b;
+    font-weight: bold;
+}
+
+#steps form input:not([type=radio]),
+#steps form textarea,
+#steps form select {
+    background: #fff;
+    border: 1px solid #a8d5a2;
+    border-radius: 5px;
+    padding: 6px;
+    width: 220px;
+    transition: box-shadow 0.3s, background 0.3s;
+}
+
+#steps form input:focus {
+    box-shadow: 0 0 5px #8ccf8a;
+    background: #f0fff0;
+}
+
+#steps form p.submit {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+#steps form button {
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    background: #8ccf8a;
+    box-shadow: 0 0 5px #8ccf8a;
+    transition: background 0.3s, color 0.3s;
+}
+
+#steps form button:hover {
+    background: #6fbb6e;
+    color: #fff;
+}

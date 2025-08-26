@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AvrTV</title>
+  <title>avrtv</title>
   <link rel="icon" href="favicon.png" type="image/png">
   <style>
     body {
@@ -72,12 +72,11 @@
 
 <body>
   <div class="contenedor">
-    <p>Con tu donación, ayudas a mantener AvrTV.site activo y libre para todos.</p>
+    <p>Con tu donación, ayudas a mantener avrtv.site activo y libre para todos.</p>
     <div class="datos">
-      AstroPay<br>
-      CLABE: 646180516100179557<br>
-      Banco: STP<br>
-      Beneficiario: SOONER CASH
+      CLABE: <br>
+      Banco: <br>
+      Beneficiario:
     </div>
     <p>Gracias por apoyar este proyecto.</p>
     <a href="/avrtv" class="btn-regreso">← Regresar al catálogo</a>
@@ -85,5 +84,6 @@
 
 
 </body>
+
 
 </html>
